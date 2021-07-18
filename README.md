@@ -57,19 +57,19 @@ lang = lang + 'Script';
 alert(lang); //Çıktı: JavaScript
 ```
 
-## Template Literals
+## Template Literals
 
 Template Literals kod okunabilirliğini artıran ve yazım kolaylığı sağlayan bir string yazma şeklidir.  String ifadelerin birleştirilmesi esnasında gömülü ifadelere (interpolasyon) izin verilmesini ve birden çok satırın kullanılmasını sağlayan yapılardır. Normal string birleştirmeden farklı olarak tek tırnak(') ya da çift tırnak (") yerine bactrick (`) içerisine yazılır.
 Template Literals kullanımında ifadeler birleştirilirken +, '', "" kullanımına gerek yoktur. Örneğin tarih bilgisini alırken yıl ifadesinden hemen sonra doğrudan / kullanabiliriz. 
 
 Kod örnekleri js/002-template-literals.js isimli dosyadadır.
 
-## Document Object Model (DOM)
+## Document Object Model (DOM)
 > W3C(World Wide Web Consortium)'e göre Document Object Model, programların ve komut dosyalarının bir belgenin içeriğine, yapısına ve stiline dinamik olarak erişmesine ve güncellemesine izin veren bir platform ve dilden bağımsız bir arayüzdür. (patika.dev)
 
 >> DOM’da HTML ile hazırladığınız sayfa, document; bu document'in içine yerleştirdiğiniz her türlü öğe ise element olarak adlandırılır. DOM'da nesnelerin birer element olarak kullanılabilmesi için hiyerarşik bir düzen izlenerek çağrılmaları gerekir. HTML içerisindeki her bir elemanın birbiri ile hiyerarşik bir yapı oluşturması ile oluşur. DOM bir ağaç dizini gibi bütün dokümanları birbirine bağlar.
 
-### DOM İçerisinden Etiket ve ID ile Öğe Seçimi
+### DOM İçerisinden Etiket ve ID ile Öğe Seçimi
 ```
 // getElementById
 let newTitle = document.getElementById('title')
