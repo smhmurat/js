@@ -64,3 +64,9 @@ console.log(url2);
 
 let url3 = url.slice(url.lastIndexOf('w')+2);
 console.log(url3);
+
+var x = 10 / 'a';
+console.log(Boolean(x));
+
+var y = "" || -2 || 'JavaScript';
+console.log(Boolean(y));
