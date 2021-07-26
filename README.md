@@ -51,6 +51,7 @@ var num4 = parseInt("10", 16); //"10" değerinin onaltılı (hexadecimal) olarak
 ```
 
 ## Strings
+String'ler ile ilgili yapılan çalışmaların tamamı js/003-strings.js isimli dosyada bulunmaktadır.
 ```
 var lang = 'Java';
 lang = lang + 'Script';
