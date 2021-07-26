@@ -80,4 +80,37 @@ console.log(newTitle);
 document.querySelector('ul#list>li>a#link').innerHTML += " değişti."
 ```
 
+## Arrow Function Kullanımı
+Fonksiyon tanımlama için JavaScript'te kullanılan klasik tanımlamanın yanı sıra ES6 ile birlikte Arrow Function yöntemi de kullanılmaktadır. Klasik tanımlamada 'function' anahtar kelimesinden sonra fonskiyon adı, parametre bildirimi yapılır.
+```
+//Klasik Fonksiyon Tanımlama
+function helloWorld(firstName) {
+    console.log(`Merhaba ${firstName}`);
+}
 
+helloWorld('Semih');
+```
+```
+//Arrow Function ile Tanımlama
+const helloWorldV1 = (firstName) => { console.log(`Arrow Function v1: ${firstName}`); }
+helloWorldV1('Semih');
+```
+Eğer fonksiyon tek parametre alacaksa parametre parantez içerisine () alınmadan da tanımlama yapılabilir. 
+```
+const helloWorldV2 = firstName => { console.log(`Arrow Function v2: ${firstName}`); }
+helloWorldV2('Semih');
+```
+Eğer fonksiyonun görevi tek bir kod satırından oluşuyorsa fonksiyon {} kullanılmadan da oluşturulabilir.
+```
+const helloWorldV3 = firstName => console.log(`Arrow Function v3: ${firstName}`);
+helloWorldV3('Semih');
+```
+Ancak birden fazla parametre ya da birden fazla kod satırı kullanıldığında () ve {} kullanımına dikkat edilmelidir. return ile fonksiyon dışarıya değer döndürebilir. 
+```
+const helloWorldV5 = (firstName, lastName) => {
+    let info = `${firstName} ${lastName}`;
+    console.log('Arrow Function v5:',info);
+    return info;
+}
+helloWorldV5('Semih','Murat');
+```
